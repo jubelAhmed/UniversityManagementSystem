@@ -6,7 +6,7 @@ public class Student extends People{
     private String deprtmentName;
     private String admissionYear;
     private String admissionSemister;
-    
+    private String gender;
 
     public Student(String id, String name, String email, String type,String deprtmentName, String admissionYear, String admissionSemister) {
         super(id, name, email, type);
