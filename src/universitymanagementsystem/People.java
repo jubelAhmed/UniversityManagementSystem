@@ -11,12 +11,14 @@ public class People {
     private String name;
     private String email;
     private String type;
+    private String gender;
    
-    public People(String id, String name, String email, String type) {
+    public People(String id, String name, String email, String type,String gender) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.type = type;
+        this.gender = gender;
     }
 
     public String getId() {
@@ -48,10 +50,19 @@ public class People {
         this.type = type;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
     @Override
     public String toString() {
-        return "People{" + "id=" + id + ", name=" + name + ", email=" + email + ", type=" + type + '}';
+        return "id=" + id + ", name=" + name + ", email=" + email + ", type=" + type + ", gender=" + gender;
     }
+
     
     
     

@@ -3,13 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package universitymanagementsystem;
+package universitymanagementsystem.admin;
 
 
 public class MainAdmin extends Admin{
     
-    public MainAdmin(String id, String name, String email, String type,String adminPassword) {
-        super(id, name, email, type,adminPassword);
+    public MainAdmin(String id, String name, String email, String type, String gender, String adminPassword) {
+        super(id, name, email, type, gender, adminPassword);
     }
+    
+   
     
 }
