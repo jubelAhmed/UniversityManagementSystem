@@ -12,8 +12,8 @@ public class People {
     private String email;
     private String type;
     private String gender;
-   
-    public People(String id, String name, String email, String type,String gender) {
+    
+    public People(String id,String name, String email, String type,String gender) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -24,7 +24,8 @@ public class People {
     public String getId() {
         return id;
     }
-
+      
+   
 
     public String getName() {
         return name;

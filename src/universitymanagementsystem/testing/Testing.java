@@ -5,6 +5,9 @@ import universitymanagementsystem.student.Student;
 import universitymanagementsystem.admin.AdminMaintain;
 import universitymanagementsystem.admin.LocalAdmin;
 import java.util.LinkedList;
+import java.util.UUID;
+import universitymanagementsystem.Course;
+import universitymanagementsystem.CourseMaintain;
 import universitymanagementsystem.teacher.Teacher;
 
 
@@ -33,6 +36,17 @@ public class Testing {
         Teacher t = new Teacher("122", "jjjj", "email", "professor","male","swe",12331);
         System.out.println(t);
         System.out.println(st); 
+        
+        UUID n = UUID.randomUUID();
+        String m = String.valueOf(n);
+        System.out.println(m);
+        
+        CourseMaintain m1 = new CourseMaintain();
+        
+        m1.addCourse(new Course("dsfd", "sad", 3.4));
+        
+        System.out.println(m1);
+        
        
     }
 }

@@ -56,7 +56,28 @@ public class StudentMaintain {
     public LinkedList getLocalStudentList(){
         return localStudentList;
     }
+    
+    public boolean removeLocalStudent(String id){
+        for(LocalStudent local : localStudentList){
+            if(local.getId().equals(id)){
+                localStudentList.remove(local);
+                return true;
+            }
+        }
+        return false;
+    }
 
+    public boolean removeForeignStudent(String id){
+        for(ForeignStudent f : foreignStudentList){
+            if(f.getId().equals(id)){
+                foreignStudentList.remove(f);
+                return true;
+            }
+            
+        }
+        return false;
+    }
+    
     @Override
     public String toString() {
         return "StudentMaintain{" + "foreignStudentList=" + foreignStudentList + ", localStudentList=" + localStudentList + '}';
