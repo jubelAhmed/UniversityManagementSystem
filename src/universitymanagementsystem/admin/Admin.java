@@ -19,6 +19,8 @@ public class Admin extends People{
     public String getAdminPassword() {
         return adminPassword;
     } 
+    
+    //this is admin panel who maintain all of things in this project
    
     
     @Override
