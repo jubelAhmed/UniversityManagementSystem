@@ -8,8 +8,10 @@ package universitymanagementsystem.employee;
 
 public class Coordinator extends Employee{
     
-    public Coordinator(String id, String name, String email, String type, String gender, double salary) {
-        super(id, name, email, type, gender, salary);
+    public Coordinator(String id, String name, String email, String type, String gender, String depertment, double salary) {
+        super(id, name, email, type, gender, depertment, salary);
     }
+    
+    
     
 }

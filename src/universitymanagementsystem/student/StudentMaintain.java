@@ -3,6 +3,7 @@ package universitymanagementsystem.student;
 
 import java.util.LinkedList;
 
+// This class mainly for testing in run time no need to real project
 
 public class StudentMaintain {
     

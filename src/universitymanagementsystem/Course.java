@@ -22,6 +22,12 @@ public class Course {
         UUID id = UUID.randomUUID();
         courseId = String.valueOf(id);
     }
+    public Course(String courseId,String courseName, String courseCode, double courseCredit) {
+        this.courseName = courseName;
+        this.courseCode = courseCode;
+        this.courseCredit = courseCredit; 
+        this.courseId = courseId;
+    }
     
     
     public void addStudent(Student student){

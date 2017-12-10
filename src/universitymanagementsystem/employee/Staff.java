@@ -11,8 +11,9 @@ package universitymanagementsystem.employee;
  */
 public class Staff extends Employee{
     
-    public Staff(String id, String name, String email, String type, String gender, double salary) {
-        super(id, name, email, type, gender, salary);
+    public Staff(String id, String name, String email, String type, String gender, String depertment, double salary) {
+        super(id, name, email, type, gender, depertment, salary);
     }
     
+   
 }

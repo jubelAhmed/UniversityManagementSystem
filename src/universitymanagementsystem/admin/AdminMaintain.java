@@ -8,14 +8,15 @@ public class AdminMaintain {
 
     private static AdminMaintain adminControl;
 
-    private LinkedList<LocalAdmin> localAdminList;
+    private LinkedList<Admin> adminList;
 
-    private LinkedList<MainAdmin> mainAdminList;
+    
+    
 
     private AdminMaintain(){
 
-        localAdminList = new LinkedList<>();
-        mainAdminList = new LinkedList<>();
+       adminList = new LinkedList<>();
+       
     }
 
     public static AdminMaintain getInstance(){
@@ -25,16 +26,13 @@ public class AdminMaintain {
         return adminControl;
     }
 
-    public void addAdmin(LocalAdmin localAdmin){
-        localAdminList.add(localAdmin);
+    public void addAdmin(Admin admin){
+        adminList.add(admin);
     }
 
-    public void addAdmin(MainAdmin mainAdmin){
-        mainAdminList.add(mainAdmin);
-    }
-
-    public LocalAdmin getLocalAdmin(String id){
-        ListIterator list = localAdminList.listIterator();
+    
+    public LocalAdmin getAdmin(String id){
+        ListIterator list = adminList.listIterator();
         while(list.hasNext()){
             LocalAdmin local = (LocalAdmin) list.next();
             if(local.getId().equals(id)){
@@ -45,51 +43,16 @@ public class AdminMaintain {
         return null;
     }
 
-    public LinkedList<LocalAdmin> getLocalAdminList(){
-        return localAdminList;
+    public LinkedList<Admin> getAdminList(){
+        return adminList;
     }
 
-    public MainAdmin getMainAdmin(String id){
-        ListIterator list = mainAdminList.listIterator();
-        while(list.hasNext()){
-            MainAdmin mainAdmin = (MainAdmin)list.next();
-            if(mainAdmin.getId().equals(id)){
-                return mainAdmin;
-            }
-        }
-        return null;
-    }
-
-    public LinkedList<MainAdmin> getMainAdminList(){
-        return mainAdminList;
-    }
-
-    public boolean removeLocalAdmin(String id){
-        for(LocalAdmin local : localAdminList){
-            if(local.getId().equals(id)){
-                localAdminList.remove(local);
-                return true;
-            }
-
-        }
-        return false;
-    }
-    
-    
-    public boolean removeMainAdmin(String id){
-        for(MainAdmin m : mainAdminList){
-            if(m.getId().equals(id)){
-                mainAdminList.remove(m);
-                return true;
-            }
-
-        }
-        return false;
-    }
+  
+     
 
     @Override
     public String toString() {
-        return "AdminMaintain{" + "localAdminList=" + localAdminList + ", mainAdminList=" + mainAdminList + '}';
+        return "AdminMaintain{" + "adminList=" + adminList + '}';
     }
 
 

@@ -7,15 +7,15 @@ import universitymanagementsystem.People;
 
 
 public class Student extends People{
-    private String deprtmentName;
+    private String depertmentName;
     private String admissionYear;
     private String admissionSemister;
     private LinkedList<Course> courseList;
 
-    public Student(String id, String name, String email, String type,String gender,String deprtmentName,
+    public Student(String id, String name, String email, String type,String gender,String depertmentName,
             String admissionYear, String admissionSemister) {
         super(id, name, email, type,gender);
-        this.deprtmentName = deprtmentName;
+        this.depertmentName = depertmentName;
         this.admissionYear = admissionYear;
         this.admissionSemister = admissionSemister;
         courseList = new LinkedList<>();
@@ -30,11 +30,11 @@ public class Student extends People{
     }
     
     public String getDeprtmentName() {
-        return deprtmentName;
+        return depertmentName;
     }
 
     public void setDeprtmentName(String deprtmentName) {
-        this.deprtmentName = deprtmentName;
+        this.depertmentName = deprtmentName;
     }
 
     public String getAdmissionYear() {
@@ -55,7 +55,7 @@ public class Student extends People{
 
     @Override
     public String toString() {
-        return "Student{" +super.toString() +" deprtmentName=" + deprtmentName + ", admissionYear=" + admissionYear 
+        return "Student{" +super.toString() +" deprtmentName=" + depertmentName + ", admissionYear=" + admissionYear 
                 + ", admissionSemister=" + admissionSemister + ", courselist="+courseList+ '}';
     }
 

@@ -1,6 +1,7 @@
 
 package universitymanagementsystem.testing;
 
+import java.sql.SQLException;
 import universitymanagementsystem.student.Student;
 import universitymanagementsystem.admin.AdminMaintain;
 import universitymanagementsystem.admin.LocalAdmin;
@@ -8,44 +9,31 @@ import java.util.LinkedList;
 import java.util.UUID;
 import universitymanagementsystem.Course;
 import universitymanagementsystem.CourseMaintain;
+import universitymanagementsystem.CourseModel;
+import universitymanagementsystem.admin.AdminModel;
+import universitymanagementsystem.student.StudentModel;
 import universitymanagementsystem.teacher.Teacher;
+import universitymanagementsystem.teacher.TeacherModel;
 
 
 public class Testing {
     
     @SuppressWarnings("empty-statement")
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException, SQLException{
+      
+      
+        Teacher t = new Teacher("222", "jjjj", "email", "professor","male","swe",12331);
+        Course c = new Course("123", "swe433", 3.5);
+    
+        CourseModel cmodel = CourseModel.getInstance();
+       
+        Course d = cmodel.getCourse("math");
         
-        LocalAdmin local = new LocalAdmin("12","jubel", "jubel@gmail.com", "local", "male","12345");
+        TeacherModel tm = TeacherModel.getInstance();
         
-        LocalAdmin local1 = new LocalAdmin("12","jubel", "jubel@gmail.com", "local",  "male","12345");
+        tm.addTeacher(t, d);
         
-        LocalAdmin local2 = new LocalAdmin("12","jubel", "jubel@gmail.com", "local",  "male","12345");
-        
-        AdminMaintain control = AdminMaintain.getInstance();
-        
-        control.addAdmin(local);
-        
-        control.addAdmin(local1);
-        
-        control.addAdmin(local2);
-        
-        LinkedList list = control.getLocalAdminList();
-        System.out.println(list.toString()); 
-        Student st = new Student("12", "jubel", "@gmail", "local","male", "swe", "2016", "summer");
-        Teacher t = new Teacher("122", "jjjj", "email", "professor","male","swe",12331);
-        System.out.println(t);
-        System.out.println(st); 
-        
-        UUID n = UUID.randomUUID();
-        String m = String.valueOf(n);
-        System.out.println(m);
-        
-        CourseMaintain m1 = new CourseMaintain();
-        
-        m1.addCourse(new Course("dsfd", "sad", 3.4));
-        
-        System.out.println(m1);
+    
         
        
     }

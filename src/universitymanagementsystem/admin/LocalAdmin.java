@@ -12,6 +12,8 @@ public class LocalAdmin extends Admin{
     public LocalAdmin(String id, String name, String email, String type, String gender, String adminPassword) {
         super(id, name, email, type, gender, adminPassword);
     }
+
+   
     
     
 }

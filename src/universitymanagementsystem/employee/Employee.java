@@ -9,10 +9,22 @@ import universitymanagementsystem.People;
 
 
 public class Employee extends People{
-    private double salary;
-    public Employee(String id, String name, String email, String type, String gender,double salary) {
+   
+    private String depertment;
+     private double salary;
+     
+    public Employee(String id, String name, String email, String type, String gender,String depertment,double salary) {
         super(id, name, email, type, gender);
         this.salary = salary;
+        this.depertment = depertment;
+    }
+
+    public String getDepertment() {
+        return depertment;
+    }
+
+    public void setDepertment(String depertment) {
+        this.depertment = depertment;
     }
 
     public double getSalary() {
@@ -25,8 +37,10 @@ public class Employee extends People{
 
     @Override
     public String toString() {
-        return "Employee{"+ super.toString()+" "+ "salary=" + salary + '}';
+        return "Employee{" + "depertment=" + depertment + ", salary=" + salary + '}';
     }
+
+    
     
     
 }
