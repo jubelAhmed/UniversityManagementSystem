@@ -202,7 +202,7 @@ public class AdminMainForm extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        adminMainRightPanel.setBackground(new java.awt.Color(0, 153, 153));
+        adminMainRightPanel.setBackground(new java.awt.Color(0, 153, 204));
         adminMainRightPanel.setLayout(new java.awt.GridLayout(1, 0));
         jPanel1.add(adminMainRightPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 0, 680, 500));
 

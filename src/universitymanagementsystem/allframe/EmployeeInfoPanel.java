@@ -156,13 +156,13 @@ public class EmployeeInfoPanel extends javax.swing.JPanel {
         studentTypeComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         studentTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Local", "Foreign" }));
 
-        setBackground(new java.awt.Color(0, 153, 153));
+        setBackground(new java.awt.Color(51, 153, 255));
         setMinimumSize(new java.awt.Dimension(680, 506));
         setName(""); // NOI18N
         setPreferredSize(new java.awt.Dimension(680, 506));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 204));
 
         empSalary.setEditable(false);
         empSalary.addActionListener(new java.awt.event.ActionListener() {
@@ -240,7 +240,7 @@ public class EmployeeInfoPanel extends javax.swing.JPanel {
         });
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(204, 0, 51));
+        jLabel18.setForeground(new java.awt.Color(204, 255, 255));
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel18.setText("Teacher Info");
 

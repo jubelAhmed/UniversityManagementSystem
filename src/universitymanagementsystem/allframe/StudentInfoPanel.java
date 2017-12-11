@@ -206,13 +206,13 @@ public class StudentInfoPanel extends javax.swing.JPanel {
         studentTypeComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         studentTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Local", "Foreign" }));
 
-        setBackground(new java.awt.Color(0, 153, 153));
+        setBackground(new java.awt.Color(0, 153, 255));
         setMinimumSize(new java.awt.Dimension(680, 506));
         setName(""); // NOI18N
         setPreferredSize(new java.awt.Dimension(680, 506));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 204));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -300,8 +300,8 @@ public class StudentInfoPanel extends javax.swing.JPanel {
             }
         });
 
-        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(204, 0, 51));
+        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(204, 255, 255));
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel18.setText("Student Info");
 
@@ -349,8 +349,8 @@ public class StudentInfoPanel extends javax.swing.JPanel {
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                .addGap(96, 96, 96)
-                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(61, 61, 61)
+                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -396,7 +396,7 @@ public class StudentInfoPanel extends javax.swing.JPanel {
                 .addGap(46, 46, 46))
         );
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-4, 0, 330, -1));
 
         searchBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         searchBtn.setForeground(new java.awt.Color(0, 0, 51));
@@ -411,8 +411,8 @@ public class StudentInfoPanel extends javax.swing.JPanel {
 
         jLabel17.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("ID");
-        add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 10, 39, 30));
+        jLabel17.setText("Student Id");
+        add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(369, 10, 110, 30));
 
         addBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         addBtn.setForeground(new java.awt.Color(0, 0, 102));
@@ -473,7 +473,7 @@ public class StudentInfoPanel extends javax.swing.JPanel {
         });
         add(courseBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, 120, 30));
 
-        coursePanel.setBackground(new java.awt.Color(0, 153, 153));
+        coursePanel.setBackground(new java.awt.Color(51, 153, 255));
         coursePanel.setBorder(new javax.swing.border.MatteBorder(null));
 
         javax.swing.GroupLayout coursePanelLayout = new javax.swing.GroupLayout(coursePanel);

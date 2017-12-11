@@ -206,13 +206,13 @@ public class TeacherInfoPanel extends javax.swing.JPanel {
         studentTypeComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         studentTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Local", "Foreign" }));
 
-        setBackground(new java.awt.Color(0, 153, 153));
+        setBackground(new java.awt.Color(51, 153, 255));
         setMinimumSize(new java.awt.Dimension(680, 506));
         setName(""); // NOI18N
         setPreferredSize(new java.awt.Dimension(680, 506));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 204));
 
         teacherSalary.setEditable(false);
         teacherSalary.addActionListener(new java.awt.event.ActionListener() {
@@ -290,7 +290,7 @@ public class TeacherInfoPanel extends javax.swing.JPanel {
         });
 
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(204, 0, 51));
+        jLabel18.setForeground(new java.awt.Color(204, 255, 255));
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel18.setText("Teacher Info");
 
@@ -343,7 +343,7 @@ public class TeacherInfoPanel extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(teacherId, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -377,7 +377,7 @@ public class TeacherInfoPanel extends javax.swing.JPanel {
                 .addGap(96, 96, 96))
         );
 
-        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 510));
 
         searchBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         searchBtn.setForeground(new java.awt.Color(0, 0, 51));
@@ -459,7 +459,7 @@ public class TeacherInfoPanel extends javax.swing.JPanel {
         });
         add(courseBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 60, 120, 30));
 
-        coursePanel.setBackground(new java.awt.Color(0, 153, 153));
+        coursePanel.setBackground(new java.awt.Color(51, 153, 255));
         coursePanel.setBorder(new javax.swing.border.MatteBorder(null));
 
         javax.swing.GroupLayout coursePanelLayout = new javax.swing.GroupLayout(coursePanel);
