@@ -58,7 +58,7 @@ public class EmployeeRegistration extends javax.swing.JPanel {
         departmentComboBox = new javax.swing.JComboBox<>();
         empType = new javax.swing.JComboBox<>();
 
-        setBackground(new java.awt.Color(0, 153, 153));
+        setBackground(new java.awt.Color(0, 102, 204));
         setMaximumSize(new java.awt.Dimension(680, 506));
         setMinimumSize(new java.awt.Dimension(680, 506));
         setPreferredSize(new java.awt.Dimension(680, 506));
@@ -75,6 +75,7 @@ public class EmployeeRegistration extends javax.swing.JPanel {
         jLabel2.setForeground(new java.awt.Color(255, 153, 153));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Employee Registration");
+        jLabel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, 240, 30));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N

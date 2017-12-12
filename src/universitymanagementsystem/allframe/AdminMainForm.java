@@ -92,11 +92,12 @@ public class AdminMainForm extends javax.swing.JFrame {
         employeeBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         adminMainRightPanel = new javax.swing.JPanel();
+        pixLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(209, 70));
 
-        jPanel1.setBackground(new java.awt.Color(0, 153, 153));
+        jPanel1.setBackground(new java.awt.Color(0, 153, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(0, 153, 153));
@@ -203,8 +204,13 @@ public class AdminMainForm extends javax.swing.JFrame {
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         adminMainRightPanel.setBackground(new java.awt.Color(0, 153, 204));
+        adminMainRightPanel.setMinimumSize(new java.awt.Dimension(680, 503));
         adminMainRightPanel.setLayout(new java.awt.GridLayout(1, 0));
-        jPanel1.add(adminMainRightPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 0, 680, 500));
+
+        pixLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/universitymanagementsystem/icon/newDiu.jpg"))); // NOI18N
+        adminMainRightPanel.add(pixLabel);
+
+        jPanel1.add(adminMainRightPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(209, 0, 680, 503));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -247,28 +253,33 @@ public class AdminMainForm extends javax.swing.JFrame {
 
     private void employeeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeBtnActionPerformed
         // TODO add your handling code here:
+        pixLabel.setVisible(false);
         panelDisplayManage(employeeInfoPanel);
     }//GEN-LAST:event_employeeBtnActionPerformed
 
     private void teacherRegistrationBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_teacherRegistrationBtnActionPerformed
         // TODO add your handling code here:
+        pixLabel.setVisible(false);
         panelDisplayManage(teacherRegForm);
         
     }//GEN-LAST:event_teacherRegistrationBtnActionPerformed
 
     private void courseBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_courseBtnActionPerformed
         // TODO add your handling code here:
+        pixLabel.setVisible(false);
         panelDisplayManage(courseFormPanel);
         
     }//GEN-LAST:event_courseBtnActionPerformed
 
     private void studentRegBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_studentRegBtnActionPerformed
         // TODO add your handling code here:
+        pixLabel.setVisible(false);
          panelDisplayManage(studentRegForm);
     }//GEN-LAST:event_studentRegBtnActionPerformed
 
     private void employeeRegBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_employeeRegBtn1ActionPerformed
         // TODO add your handling code here:
+        pixLabel.setVisible(false);
         panelDisplayManage(employeeRegistration);
         
     }//GEN-LAST:event_employeeRegBtn1ActionPerformed
@@ -342,6 +353,7 @@ public class AdminMainForm extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JLabel pixLabel;
     private javax.swing.JButton studentBtn;
     private javax.swing.JButton studentRegBtn;
     private javax.swing.JButton teacherBtn;
